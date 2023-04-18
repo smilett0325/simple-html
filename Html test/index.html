@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        hr {
+            border: none;
+            border-bottom: solid 4px #ffa042;
+            width: 40%;
+            margin-left: 0;
+            }
+        p {
+            font-weight: bold;
+            }
+        body {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            background-color: darkcyan;
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 15px;
+            line-height: 28px;
+            letter-spacing: 1px;
+            }
+        ul {
+            padding: 0;
+            list-style: none;
+            }
+        .resume {
+            display: flex;
+            max-width: 950px;
+            border: solid white 8px;
+            padding: 50px;
+            position: relative;
+            }
+        h2 {
+            margin: 0;
+            margin-bottom: 25px;
+            font-weight: 400;
+            }
+        h2::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 8px;
+            background-color: #ffa042;
+            margin-left: 10px;
+            }
+
+        h4 {
+            margin: 0;
+            margin-top: 40px;
+            opacity: 0.8;
+            font-weight: 400;
+            }
+        a {
+            color: white;
+            text-decoration: none;
+            }
+
+        .listexp > li {
+            display: flex;
+            margin-bottom: 10px;
+            }
+        .listexp > li :nth-child(1) {
+            border-color: #ffa042;
+            }
+        .listexp > li :nth-child(2) {
+            border-color: #ffdc35;
+            }
+        .listexp > li :nth-child(3) {
+            border-color: #ffff37;
+            }
+        .listexp ul li {
+            padding-left: 10px;
+            border-left: solid white 3px;
+            margin-left: 10px;
+            }
+        .skilllist {
+            display: flex;
+            flex-wrap: wrap;
+            }
+        .skilllist li {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 5px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: #ffa042;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            background-color: rgba(255, 161, 66, 0.4);
+            }
+        .circle::after {
+            content: "";
+            display: block;
+            background-color: #019858;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            }
+            .p90,
+            .p180,
+            .p270,
+            .p360 {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background-color: #ffa042;
+            }
+        .p180 {
+            top: 50%;
+            }
+        .p270 {
+            left: 0;
+            top: 50%;
+            }
+        .p360 {
+            left: 0;
+            top: 0;
+            }
+
+        .decoration {
+            width: 300px;
+            height: 140px;
+            background: linear-gradient(#ffdc35, #ffa042, #ff8040, #ff2d2d);
+            border-radius: 70px 0px 0px 70px;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            }
+        .left {
+            flex: 5;
+            }
+        .right {
+            flex: 7;
+            }
+        .left,
+        .right {
+            padding: 15px;
+            }
+        .left {
+            padding-right: 50px;
+            border-right: solid 1px #ff2d2d;
+            }
+        .right {
+            padding-left: 50px;
+            padding-top: 150px;
+            }
+
+
+            .progsklist .bar {
+            width: 170px;
+            height: 10px;
+            border: solid 2px #ffa042;
+            border-radius: 5px;
+            }
+        .progsklist li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            }
+        .value,
+        .value1,
+        .value2,
+        .value3 {
+            height: 100%;
+            width: 60%;
+            background-color: #ffa042;
+            }
+        .value1 {
+            width: 60%;
+            }
+        .value2 {
+            width: 40%;
+            }
+        .value3 {
+            width: 40%;
+            }
+        .btn {
+            border: solid 3px #ffa042;
+            padding: 5px 20px;
+            margin-right: 10px;
+            }
+        .fill {
+            background-color: #ffa042;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="left">
+          <img src="個人照.jpg" width="250">
+          <h1>陳冠廷</h1>
+          <h4>亞洲大學資訊工程學系</h4>
+          <hr>
+          <p>努力不一定會成功，但不嘗試努力就不會成功。</p>
+          <p>跨出舒適圈挑戰自己。</p>
+          <div class="buttons">
+            <a href="https://www.facebook.com/profile.php?id=100000564589679"><img src="FB.webp" width="40"></a>
+            <a href="https://www.instagram.com/rswb_crown/" ><img src="IG.png" width="40" ></a>
+          </div>
+          <div class="block">
+            <h2>興趣</h2>
+              <div class="block">
+      
+                <ul class="skilllist">
+                  <li>
+                    <div class="circle">
+                      <div class="p90"></div>
+                      <div class="p180"></div>
+                      <div class="p270"></div>
+                      <div class="p360"></div>
+      
+                    </div>
+                    籃球
+                  </li>
+                  <li>
+                    <div class="circle">
+                      <div class="p90"></div>
+                      <div class="p180"></div>
+                      <div class="p270"></div>
+      
+                    </div>
+                    旅遊
+                  </li>
+      
+                  <li>
+                    <div class="circle">
+                      <div class="p90"></div>
+                      <div class="p180"></div>
+                      <div class="p270"></div>
+                      
+      
+                    </div>
+      
+                    線上遊戲
+                  </li>
+                  <li>
+                    <div class="circle">
+                      <div class="p90"></div>
+                      <div class="p180"></div>
+                      
+      
+                    </div>
+                    自行車
+                  </li>
+                  <li>
+                    <div class="circle">
+                      <div class="p90"></div>
+                      <div class="p180"></div>
+                      <div class="p270"></div>
+                      <div class="p360"></div>
+      
+                    </div>
+                    閱讀
+                  </li>
+                  <li>
+                    <div class="circle">
+                      <div class="p90"></div>
+                      <div class="p180"></div>
+                      <div class="p270"></div>
+      
+                    </div>
+                    益智遊戲
+                  </li>
+            
+                </ul>
+                <h4>Programskills</h4>
+                <h2>程式技能</h2>
+      
+                <ul class="progsklist">
+                  <li> HTML/CSS
+                    <div class="bar">
+                      <div class="value">
+      
+                      </div>
+                    </div>
+                  </li>
+                  <li>Java <div class="bar">
+                      <div class="value1"></div>
+                    </div>
+                  </li>
+                  <li>C# <div class="bar">
+                      <div class="value2"></div>
+                    </div>
+                  </li>
+                  <li>Ptyhon <div class="bar">
+                      <div class="value3"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </h2>
+      
+          </div>
+        </div>
+        <div class="right">
+          <div class="decoration"></div>
+          <div class="block">
+            <h2>經歷</h2>
+          </div>
+          <ul class="listexp">
+            <li class="year">
+              <ul>
+                <li>亞洲大學資工系學會會長</li>
+              </ul>
+      
+            </li>
+            <li class="year">
+              <ul>
+                <li>系籃隊員</li>
+              </ul>
+      
+            </li>
+            <li class="year">
+              <ul>
+                <li>百佳泰股份有限公司</li>
+                <li>測試工程師</li>
+              </ul>
+      
+            </li>
+                <h2>自傳</h2>
+                <h4>我是陳冠廷,畢業於亞洲大學資訊工程學系數位內容與遊戲設
+                    計組,本身個性活潑開朗,認為自己最大的優點就是擅長與他人
+                    溝通,且負責任。在學習方面對於數學邏輯方面較為擅長,因此
+                    報考貴校電通系線性代數,且有幸獲得滿分的成績。
+                    大學時期曾去與學校有合作關係的百佳泰公司實習過,擔任測
+                    試工程師,為各項 3C 產品進行手動及半自動的測試,在實習的
+                    過程中學習到了很多與人溝通以及解決問題的能力,也很感謝實
+                    習時的督導很信任我給予我多學習的機會,讓我這趟實習之旅獲
+                    益良多。正因為經歷過實習階段的洗禮,奠定了我想考取碩士的
+                    初心,雖然自認自己實力還有很多不足,但我覺得我的優點就是
+                    很願意學習,且主動提出問題。
+                    大四的畢業專題也是我個人獨力完成的,雖然已經有實習的學
+                    分可以抵免畢業專題,但我還是想嘗試看看製作遊戲,雖然不是
+                    個很精緻的遊戲,卻也是在我實習之餘的嘔心瀝血之作,不管是
+                    製作的過程以及發表時的成就感,都讓我覺得心滿意足。
+                    因為本身畢業於資工系,因此想找軟體相關的實驗室進行研
+                    究,希望自己能在研究的過程中部不段精進自己的軟體實力基
+                    礎,且慢慢培養未來就業的能力,希望能有這個機會跟教授有面
+                    談的機會,讓我將更詳細的一切一一跟您訴說。</h4>
+                <hr>
+            <li>
+                <img src="寶可夢2.jpg" width="400">
+            </li>
+        </div>
+      </div>
+</body>
+</html>
